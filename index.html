@@ -37,6 +37,9 @@
         .font-manrope {
             font-family: 'Manrope', sans-serif;
         }
+        .rotate-circle{
+            transform: rotateX(180deg) rotate(90deg);
+        }
     </style>
 </head>
 
@@ -148,25 +151,37 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-16 lg:gap-8">
                 <!-- redial 1 -->
                 <div class="text-center w-3/4 md:w-full mx-auto">
-                    <div class="radial-progress text-primary-color" style="--value:87;" role="progressbar">87%</div>
+                    <div class="relative">
+                        <div class="radial-progress text-primary-color rotate-circle" style="--value:87;" role="progressbar"></div>
+                        <p class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-darker-color text-2xl font-extrabold">87%</p>
+                    </div>
                     <h5 class="text-darker-color text-xl font-semibold mt-6 mb-4">Prayer Facility</h5>
                     <p class="text-dark-color text-base font-normal leading-6">Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
                 <!-- redial 2 -->
                 <div class="text-center w-3/4 md:w-full mx-auto">
-                    <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+                    <div class="relative">
+                        <div class="radial-progress text-[#49D293] rotate-circle" style="--value:95;" role="progressbar"></div>
+                        <p class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-darker-color text-2xl font-extrabold">95%</p>
+                    </div>
                     <h5 class="text-darker-color text-xl font-semibold mt-6 mb-4">Experienced Coach</h5>
                     <p class="text-dark-color text-base font-normal leading-6">Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
                 <!-- redial 3 -->
                 <div class="text-center w-3/4 md:w-full mx-auto">
-                    <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">90%</div>
+                    <div class="relative">
+                        <div class="radial-progress text-[#FFB546] rotate-circle" style="--value:90;" role="progressbar"></div>
+                        <p class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-darker-color text-2xl font-extrabold">90%</p>
+                    </div>
                     <h5 class="text-darker-color text-xl font-semibold mt-6 mb-4">Senior Player</h5>
                     <p class="text-dark-color text-base font-normal leading-6">Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
                 <!-- redial 4 -->
                 <div class="text-center w-3/4 md:w-full mx-auto">
-                    <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
+                    <div class="relative">
+                        <div class="radial-progress text-[#4C8DF1] rotate-circle" style="--value:80;" role="progressbar"></div>
+                        <p class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-darker-color text-2xl font-extrabold">80%</p>
+                    </div>
                     <h5 class="text-darker-color text-xl font-semibold mt-6 mb-4">Training Ground</h5>
                     <p class="text-dark-color text-base font-normal leading-6">Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
